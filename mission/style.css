@@ -1,15 +1,36 @@
+html, body {
+    height: 100%;
+}
 body {
     font-size: 20px;
+    margin: 0;
+    background: #fff;
+    color: #000;
+    line-height: 1.4;
+}
+body, #content {
+    transition: background-color 0.5s ease, color 0.5s ease, border-color 0.5s ease;
 }
 #content {
-    max-width: 60%;
+    max-width: 600px;
     margin: 50px auto;
+    padding: 100px 100px;
+    border: 2px solid #000;
+    background: transparent;
+    color: #000
 }
 header {
     text-align: center;
 }
 header p {
     color: #149BD9
+}
+.theme-switcher {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    font-size: 16px;
+    z-index: 100;
 }
 main {
     list-style-type: decimal;
@@ -30,4 +51,14 @@ footer {
 footer img {
     width: 150px;
     height: 80px;
+}
+
+/*Dark Theme Section*/
+body.dark {
+    background: #333;
+    color: #fff;
+}
+body.dark #content{
+    border-color: #fff;
+    color: #fff
 }
