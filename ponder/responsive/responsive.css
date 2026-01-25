@@ -13,9 +13,9 @@ header, main, footer {
     padding: 1rem;
     background-color: lightblue;
 }
-    main{
-        display: grid;
-        grid-template-columns: 1fr;
+main{
+    display: grid;
+    grid-template-columns: 1fr;
     }
 h1 {
     text-align: center;
