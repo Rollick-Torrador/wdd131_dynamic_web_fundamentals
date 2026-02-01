@@ -78,13 +78,13 @@ footer {
 
 
 
-@media (min-width: 700px) {
+@media screen and (min-width: 700px) {
   .gallery {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-@media (min-width: 1000px) {
+@media screen and (min-width: 1000px) {
   .gallery {
     grid-template-columns: repeat(3, 1fr);
   }
