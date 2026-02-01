@@ -28,14 +28,22 @@ main {
     text-align: center;
 }
 .main-nav a, .main-nav a:visited {
+    font-weight: 300;
+    font-size: 0.95rem;
     color: #fff;
-    text-decoration: none;
+    text-decoration: underline;
 }
 .main-nav {
     display: none;
     width: 100%;
     justify-content: center;
     color: white;
+}
+.main-nav.open {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
 }
 .menu-btn {
     display: inline-block;
@@ -47,6 +55,7 @@ main {
     border: none;
     box-shadow: none;
     outline: none;
+    font-weight: 500;
 }
 H1, H2, P {
     margin: 0;
@@ -70,6 +79,37 @@ H1, H2, P {
     gap: 1.5rem;
     justify-items: center;
     padding: 1rem 0;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+dialog img {
+    display: block;
+    max-width: 80vw;
+    max-height: 80vh;
+    z-index: 1;
+}
+dialog {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    background-color: rgba(0,0,0,.75);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+dialog[open] {
+    display: flex;
+}
+.close-viewer {
+    position: absolute;
+    top: 10vh;
+    right: 2vh;
+    padding: 3px 6px;
+    font-size: 1.5em;
+    z-index: 10;
+    cursor: pointer;
+    background: white;
 }
 footer {
     text-align: center;
@@ -79,24 +119,23 @@ footer {
 
 
 @media screen and (min-width: 700px) {
-  .gallery {
-    grid-template-columns: repeat(2, 1fr);
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media screen and (min-width: 1000px) {
-  .gallery {
-    grid-template-columns: repeat(3, 1fr);
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
   }
-
-  .menu-btn {
-    display: none;
+    .menu-btn {
+        display: none;
   }
-
-  .main-nav {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    margin-top: 0.25rem;
+    .main-nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 1rem;
+        margin-top: 0.25rem;
   }
 }
