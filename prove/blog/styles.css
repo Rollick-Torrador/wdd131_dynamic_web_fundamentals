@@ -28,7 +28,7 @@ header nav ul {
 }
 header nav a {
     text-decoration: none;
-    color: red;
+    color: #B00000;
 }
 header::after{
     content: "";
@@ -54,7 +54,7 @@ header::after{
     color: goldenrod
 }
 .empty {
-    color: gray
+    color: #555;
 }
 .blog-meat {
     grid-column: 1/4;
@@ -62,7 +62,7 @@ header::after{
     text-align: center;
 }
 .blog-meat h2 {
-    color: red;
+    color: #B00000;
 }
 .blog-meat p {
     padding: 0 8rem;
