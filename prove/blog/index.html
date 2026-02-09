@@ -1,65 +1,41 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Kids Read For Fun</title>
-        <meta name="description" content="A book blog." />
-        <link rel="stylesheet" href="styles.css" />
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kids Book Blog</title>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" 
+        rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
     </head>
     <body>
-        <a class="skip-link" href="#main">Skip to main content</a>
-        <header class="site-header">
-            <div class="container">
-            <h1 class="site-title">Kids Read For Fun</h1>
-
-            <nav class="site-nav" aria-label="Primary">
-                <ul class="nav-list">
-                <li><a href="#" aria-current="page">About</a></li>
-                <li><a href="#">Archive</a></li>
-                <li><a href="#">Search</a></li>
+        <header>
+            <h1>Kids Read For Fun</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Archive</a></li>
+                    <li><a href="#">Search</a></li>
                 </ul>
             </nav>
-            </div>
-            <hr class="rule" />
         </header>
-
-        <main id="main" class="container">
-            <article class="post">
-                <div class="post-grid">
-                    <aside class="post-meta" aria-label="Post details">
-                        <p class="meta-date"><time datetime="2022-07-05">July 5, 2022</time></p>
-                        <p class="meta-age">10–14</p>
-                        <p class="meta-genre">Fantasy</p>
-
-                        <p class="meta-rating" aria-label="Rating: 4 out of 5">
-                            <span aria-hidden="true">★★★★☆</span>
-                        </p>
-                    </aside>
-                    <section class="post-body">
-                    <h2 class="post-title">Septimus Heap Book One: Magyk</h2>
-
-                    <figure class="post-figure">
-                        <img
-                        src="https://upload.wikimedia.org/wikipedia/en/5/5f/Magkycover2.jpg"
-                        alt="Cover of the book Magyk by Angie Sage"
-                        width="240"
-                        height="360"
-                        loading="lazy"
-                        />
-                        <figcaption class="sr-only">Book cover</figcaption>
-                    </figure>
-
-                    <p class="post-text">
-                        If you enjoy stories about seventh sons and magyk this is the book for you.
-                    </p>
-                    </section>
-                </div>
+        <main>
+            <article class="blog-post">
+                <section class="post-details">    
+                    <p>July 5, 2022</p>
+                    <p>10-14</p>
+                    <p>Fantasy</p>
+                    <span class="filled">★★★★</span><span class="empty">☆</span>
+                </section>
+                <section class="blog-meat">    
+                    <h2>Septimus Heap Book One: Magyk</h2>
+                    <img src="https://upload.wikimedia.org/wikipedia/en/5/5f/Magkycover2.jpg"
+                    alt="Cover of the book Magyk by Angie Sage">
+                    <p>If you enjoy stories about seventh sons of seventh sons and magyk this is the book for you</p>
+                </section>    
             </article>
         </main>
-
-        <hr class="rule" />
-        <footer class="site-footer">
+        <footer>
             <p>Jane Doe</p>
         </footer>
     </body>
