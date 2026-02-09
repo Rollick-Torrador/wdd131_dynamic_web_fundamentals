@@ -50,8 +50,11 @@ header::after{
     text-align: right;
     padding-right: 2rem;
 }
+.post-details span{
+    font-size: x-large;
+}
 .filled {
-    color: gold
+    color: darkgoldenrod
 }
 .empty {
     color: #555;
