@@ -1,0 +1,131 @@
+/* ====== Outer container ====== */
+#form-grid{
+  width: 550px;
+  background: white;
+  padding: 24px;
+  box-sizing: border-box;
+}
+
+/* ====== OUTER GRID (Form Grid) ====== */
+#card-details{
+  display: grid;
+  height: 250px;
+  width: 100%;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 1fr 3fr 1fr 1fr;
+  gap: 0;
+  position: relative;
+  box-sizing: border-box;
+}
+
+/* ====== Front card: OUTER placement + INNER grid ====== */
+#front-card{
+  grid-column: 1 / 3;
+  grid-row: 1 / 3;
+  z-index: 2;
+
+  background: lightgrey;
+  border-radius: 4px;
+  box-shadow: 0 6px 10px rgba(0,0,0,.25);
+
+  transform: translate(10px, -10px);
+
+  /* INNER grid */
+  display: grid;
+  padding: 14px;
+  box-sizing: border-box;
+  gap: 10px;
+
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: auto auto auto;
+}
+
+/* Front card children */
+.total{
+  grid-column: 1 / 2;
+  grid-row: 1;
+  margin: 0;
+}
+
+.chip{
+  grid-column: 2 / 3;
+  grid-row: 1;
+  justify-self: end;
+
+  width: 50px;
+  height: 32px;
+  background: #c9c9c9;
+  border-radius: 6px;
+}
+
+.card-number{
+  grid-column: 1 / -1;
+  grid-row: 2;
+}
+
+.card-holder{
+  grid-column: 1 / 2;
+  grid-row: 3;
+}
+
+.expiration{
+  grid-column: 2 / 3;
+  grid-row: 3;
+}
+
+.exp-row{
+  display: flex;
+  gap: 8px;
+}
+
+/* ====== Back card: OUTER placement + INNER grid ====== */
+#back-card{
+  grid-column: 2 / 4;
+  grid-row: 2 / 4;
+  z-index: 1;
+
+  background: lightgrey;
+  border-radius: 4px;
+  box-shadow: 0 6px 10px rgba(0,0,0,.25);
+
+  transform: translate(40px, 10px);
+
+  /* INNER grid */
+  display: grid;
+  padding: 14px;
+  box-sizing: border-box;
+  gap: 10px;
+
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: auto 1fr auto;
+}
+
+/* Back card children */
+.magstripe{
+  grid-column: 1 / -1;
+  grid-row: 1;
+
+  height: 42px;
+  background: #2b2b2b;
+  border-radius: 4px;
+}
+
+.cvv{
+  grid-column: 2 / 3;
+  grid-row: 3;
+  align-self: end;
+}
+
+/* ====== Submit button placement ====== */
+#submit-btn{
+  grid-column: 3 / 4;
+  grid-row: 4 / 5;
+  z-index: 3;
+
+  justify-self: end;
+  align-self: end;
+
+  margin: 0.5rem;
+  padding: 8px 16px;
+  border-radius: 4px;
+}
