@@ -30,7 +30,6 @@ img {
   margin: 0 auto;
 }
 
-/* Header */
 .site-header {
   display: flex;
   justify-content: center;
@@ -65,7 +64,6 @@ h2 {
   margin-top: 0.5rem;
 }
 
-/* Search */
 .search-section {
   margin-bottom: 1rem;
 }
@@ -92,7 +90,6 @@ h2 {
   font-size: 1.1rem;
 }
 
-/* Recipe card */
 .recipe-card {
   display: flex;
   flex-direction: column;
@@ -143,7 +140,6 @@ h2 {
   font-size: 0.95rem;
 }
 
-/* Footer */
 .site-footer {
   display: flex;
   flex-direction: column;
@@ -164,7 +160,6 @@ h2 {
   height: 24px;
 }
 
-/* Utility */
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -177,7 +172,6 @@ h2 {
   border: 0;
 }
 
-/* Larger devices */
 @media (min-width: 700px) {
   .logo {
     width: 90px;
