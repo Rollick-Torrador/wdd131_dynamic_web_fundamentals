@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Recipe Book</title>
+        <meta name="description" content="A simple recipe book featuring delicious recipes.">
+
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="Recipe Book">
+        <meta property="og:description" content="A simple recipe book featuring delicious recipes.">
+        <meta property="og:url" content="https://Rollick-Torrador.github.io/wdd131/recipes/index.html">
+        <meta property="og:image" content="https://Rollick-Torrador.github.io/wdd131/recipes/images/social-preview-image.png">
+
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="Recipe Book">
+        <meta name="twitter:description" content="A simple recipe book featuring delicious recipes.">
+        <meta name="twitter:image" content="https://Rollick-Torrador.github.io/wdd131/recipes/images/social-preview-image.png">
+
+        <link rel="icon" href="images/favicon.ico">
+        <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="styles2.css">
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <div class="page">
+            <header class="site-header">
+                <div class="logo-group">
+                    <img src="images/recipe-book.png" alt="Recipe Book logo" class="logo">
+                    <h1>RecipeBook</h1>
+                </div>
+            </header>
+
+            <main>
+                <section class="search-section">
+                    <form class="search-form" id="search-form" action="#" method="get">
+                        <label for="recipe-search" class="visually-hidden">Search for a recipe</label>
+                        <input type="search" id="recipe-search" name="q" placeholder="Find a recipe">
+                        <button type="submit" aria-label="Search">
+                            <img src="images/search.svg" alt="search icon">
+                        </button>
+                    </form>
+                </section>
+
+                <section id="recipe-container"></section>
+            </main>
+
+            <footer class="site-footer">
+                <a href="https://www.flaticon.com/free-icons/recipe" title="recipe icons">
+                    Recipe icons created by Freepik - Flaticon
+                </a>
+
+                <div class="social">
+                    <a href="#" aria-label="Instagram">
+                        <img src="images/instagram_icon.svg" alt="instagram icon">
+                    </a>
+                    <a href="#" aria-label="YouTube">
+                        <img src="images/youtube_icon.svg" alt="youtube icon">
+                    </a>
+                    <a href="#" aria-label="Pinterest">
+                        <img src="images/pinterest_icon.svg" alt="pinterest icon">
+                    </a>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>
